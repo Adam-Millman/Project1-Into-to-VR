@@ -15,7 +15,7 @@ public class DemoGameStart : MonoBehaviour
         float rightTriggerValue = triggerLeft.action.ReadValue<float>();
 
         if(leftTriggerValue > 0.5f && rightTriggerValue > 0.5f){
-            SceneManager.LoadScene("Scenes/MainScene");
+            SceneManager.LoadScene("Scenes/Level 1");
         }
     }
 }
