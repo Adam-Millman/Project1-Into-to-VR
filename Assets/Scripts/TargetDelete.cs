@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TargetDelete : MonoBehaviour
 {
-    public static int totalEnemies = 0;
+    public static int totalEnemies = 6;
     public static int killCount = 0;
-
-    public string nextSceneName;
 
     void Start()
     {
@@ -27,7 +25,7 @@ public class TargetDelete : MonoBehaviour
 
         if (killCount >= totalEnemies)
         {
-            SceneManager.LoadScene(nextSceneName);
+            SceneManager.LoadScene("Scenes/Level 1 win");
         }
     }
 }
